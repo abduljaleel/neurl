@@ -111,7 +111,7 @@ export default function ModelsPage() {
                 <Label>Provider</Label>
                 <Select
                   value={newModel.provider}
-                  onValueChange={(val) =>
+                  onValueChange={(val: string | null) =>
                     setNewModel({ ...newModel, provider: val as ModelProvider })
                   }
                 >

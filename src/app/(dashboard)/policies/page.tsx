@@ -158,7 +158,7 @@ export default function PoliciesPage() {
                 <Label>Condition Type</Label>
                 <Select
                   value={newPolicy.conditionType}
-                  onValueChange={(val) =>
+                  onValueChange={(val: string | null) =>
                     setNewPolicy({
                       ...newPolicy,
                       conditionType:
@@ -207,7 +207,7 @@ export default function PoliciesPage() {
                   <Label>Target Model</Label>
                   <Select
                     value={newPolicy.targetModel}
-                    onValueChange={(val) =>
+                    onValueChange={(val: string | null) =>
                       setNewPolicy({ ...newPolicy, targetModel: val ?? "" })
                     }
                   >
@@ -227,7 +227,7 @@ export default function PoliciesPage() {
                   <Label>Fallback Model</Label>
                   <Select
                     value={newPolicy.fallbackModel}
-                    onValueChange={(val) =>
+                    onValueChange={(val: string | null) =>
                       setNewPolicy({ ...newPolicy, fallbackModel: val ?? "" })
                     }
                   >
